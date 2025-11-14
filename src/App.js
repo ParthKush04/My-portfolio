@@ -36,8 +36,7 @@ export default function App() {
         <p>
           I’m an Electrical Engineering student at MNNIT Allahabad and a passionate MERN stack developer. 
           I enjoy building full-stack web apps, solving DSA problems, and exploring backend architectures. 
-          With 1000+ DSA problems solved and experience in React, Node.js, and MongoDB, 
-          I aim to create meaningful and efficient digital experiences.
+          With 1000+ DSA problems solved and experience in React, Node.js, and MongoDB.
         </p>
       </section>
 
