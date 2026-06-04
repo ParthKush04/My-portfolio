@@ -19,7 +19,6 @@ const heroPhrases = [
 ];
 
 const highlights = [
-  { value: "5+", label: "Projects shipped" },
   { value: "10+", label: "Core technologies" },
   { value: "1000+", label: "DSA problems solved" },
 ];
@@ -45,8 +44,8 @@ const projects = [
   },
   {
     title: "Syncly — Networking & Video Calls",
-    summary: "A platform for networking and video calls for LinkedIn-verified professionals.",
-    tags: ["React", "WebRTC", "Realtime", "UI"],
+    summary: "A platform for networking and video calls for LinkedIn-verified professionals. Uses Stream API for realtime messaging and presence.",
+    tags: ["React", "WebRTC", "Stream API", "Realtime", "UI"],
     accent: "linear-gradient(135deg, rgba(99,102,241,0.95), rgba(16,185,129,0.85))",
     github: "https://github.com/ParthKush04/Syncly",
     demo: "https://syncly-six.vercel.app/",
