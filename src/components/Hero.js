@@ -44,7 +44,7 @@ export default function Hero(){
 
         <motion.div className="flex justify-center md:justify-end" initial={{ opacity:0, x:20 }} whileInView={{ opacity:1, x:0 }} viewport={{once:true}} transition={{duration:0.8}}>
           <div className="w-56 h-56 md:w-72 md:h-72 rounded-2xl overflow-hidden card-elevate glass flex items-center justify-center">
-            <img src={require('../parth.jpeg') } alt="Parth" className="w-full h-full object-cover transform hover:scale-105 transition" />
+            <img src={require('../Parth_Kushwaha.jpeg')} alt="Parth" className="w-full h-full object-cover transform hover:scale-105 transition" />
           </div>
         </motion.div>
 

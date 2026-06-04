@@ -1,7 +1,7 @@
 import React, { useEffect, useMemo, useState } from "react";
 import { AnimatePresence, motion } from "framer-motion";
 import "./App.css";
-import profile from "./parth.jpeg";
+import profile from "./Parth_Kushwaha.jpeg";
 
 const navigationItems = [
   { id: "home", label: "Home" },
@@ -29,7 +29,7 @@ const skillGroups = [
   { title: "Backend", tone: "violet", progress: 90, skills: ["Node.js", "Express.js", "REST APIs", "Authentication", "Socket.io"] },
   { title: "Database", tone: "emerald", progress: 88, skills: ["MongoDB", "Mongoose", "Data Modeling", "Query Optimization"] },
   { title: "Programming Languages", tone: "amber", progress: 90, skills: ["C++", "JavaScript", "Python", "Java"] },
-  { title: "Tools", tone: "slate", progress: 86, skills: ["Git", "GitHub", "Postman", "VS Code", "Figma"] },
+  { title: "Tools", tone: "slate", progress: 86, skills: ["Git", "GitHub", "Postman", "VS Code"] },
 ];
 
 const projects = [
@@ -39,39 +39,27 @@ const projects = [
       "A modern hiring platform that helps recruiters screen applications faster with analytics-driven workflows, secure authentication, and polished dashboards.",
     tags: ["React", "Node", "MongoDB", "ATS", "Auth"],
     accent: "linear-gradient(135deg, rgba(59, 130, 246, 0.95), rgba(168, 85, 247, 0.85))",
-    github: "https://github.com/ParthKush04",
-    demo: "#contact",
+    github: "https://github.com/Suraj9954/Job-Portal",
+    demo: "",
     initials: "JP",
   },
   {
-    title: "MedCare Healthcare Platform",
-    summary:
-      "A healthcare experience focused on smooth booking flows, protected user journeys, and clean interfaces for patients and administrators.",
-    tags: ["MERN", "Dashboard", "Bookings", "Responsive"],
-    accent: "linear-gradient(135deg, rgba(20, 184, 166, 0.95), rgba(59, 130, 246, 0.8))",
-    github: "https://github.com/ParthKush04",
-    demo: "#contact",
-    initials: "MC",
+    title: "Syncly — Networking & Video Calls",
+    summary: "A platform for networking and video calls for LinkedIn-verified professionals.",
+    tags: ["React", "WebRTC", "Realtime", "UI"],
+    accent: "linear-gradient(135deg, rgba(99,102,241,0.95), rgba(16,185,129,0.85))",
+    github: "https://github.com/ParthKush04/Syncly",
+    demo: "https://syncly-six.vercel.app/",
+    initials: "SY",
   },
   {
-    title: "Scrap Management System",
-    summary:
-      "A workflow-driven system for collecting, tracking, and managing scrap requests with role-based operations and reliable data handling.",
-    tags: ["CRUD", "MongoDB", "APIs", "Operations"],
-    accent: "linear-gradient(135deg, rgba(245, 158, 11, 0.95), rgba(236, 72, 153, 0.82))",
-    github: "https://github.com/ParthKush04",
-    demo: "#contact",
-    initials: "SM",
-  },
-  {
-    title: "Chat Application",
-    summary:
-      "A real-time messaging experience designed with crisp conversations, fast interactions, and a clean product-led interface.",
-    tags: ["Realtime", "Sockets", "Messaging", "UI"],
-    accent: "linear-gradient(135deg, rgba(14, 165, 233, 0.95), rgba(99, 102, 241, 0.85))",
-    github: "https://github.com/ParthKush04",
-    demo: "#contact",
-    initials: "CA",
+    title: "Code Reviewer",
+    summary: "A code review tool to help developers get automated feedback and improve code quality.",
+    tags: ["Node", "Express", "Static Analysis"],
+    accent: "linear-gradient(135deg, rgba(14,165,233,0.95), rgba(104, 166, 255, 0.85))",
+    github: "https://github.com/ParthKush04/Code-Reviewer",
+    demo: "",
+    initials: "CR",
   },
   {
     title: "Portfolio Website",
@@ -199,9 +187,11 @@ function ProjectCard({ project }) {
           <a href={project.github} target="_blank" rel="noreferrer" className="btn btn--small btn--ghost">
             GitHub
           </a>
-          <a href={project.demo} className="btn btn--small btn--primary">
-            Live Demo
-          </a>
+          {project.demo && project.demo.trim() !== "" ? (
+            <a href={project.demo} target="_blank" rel="noreferrer" className="btn btn--small btn--primary">
+              Live Demo
+            </a>
+          ) : null}
         </div>
       </div>
     </motion.article>
